@@ -18,8 +18,8 @@ function yellowBtn(){
     document.body.style.backgroundColor='lightYellow'
 }
 
-const purpleButton = document.getElementById('purple-bg');
-purpleButton.onclick = function purpleBtn(){
+const salmonButton = document.getElementById('salmon-bg');
+salmonButton.onclick = function salmonBtn(){
     document.body.style.backgroundColor = 'salmon'
 }
 // const purpleButton = document.getElementById('purple-bg');
@@ -28,3 +28,19 @@ purpleButton.onclick = function purpleBtn(){
 // function purpleBtn(){
 //     document.body.style.backgroundColor = 'gray'
 // }
+
+const orangeButton = document.getElementById('orange-bg');
+orangeButton.addEventListener('click',orangeBtn)   
+
+function orangeBtn(){
+    document.body.style.backgroundColor = 'orange'
+}
+
+const purpleButton = document.getElementById('purple-bg');
+purpleButton.addEventListener('click',function purpleBtn() {
+    document.body.style.backgroundColor = 'purple'
+})
+
+document.getElementById('violate-bg').addEventListener('click',function(){
+    document.body.style.backgroundColor = 'violet'
+})
